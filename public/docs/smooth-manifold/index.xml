@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>smooth manifold optimization on notes</title>
+    <link>/docs/smooth-manifold/</link>
+    <description>Recent content in smooth manifold optimization on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/docs/smooth-manifold/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>motivations</title>
+      <link>/docs/smooth-manifold/motivations/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/smooth-manifold/motivations/</guid>
+      <description>Formulations that motivate manifold optimization.
+Logistic regression Taking a well known formulation from linear algebra and teasing out a curvy structure.
+Consider $x_1,\ldots,x_m \in \xi$ each with a corresponding binary label $y_1,\ldots,y_m \in \{0,1\}$.
+We can define some vector $\theta \in \xi$ that we can &amp;ldquo;grab onto&amp;rdquo; with each $x_i$ using an inner-product defined over the space. Applying a logistic transform $\sigma$, we can obtained well-behaved probabilities:
+$$P[y=1|x,\theta] = \sigma(\lang\theta, x_i\rang) $$ $$P[y=0|x,\theta] = 1 - \sigma(\lang\theta, x_i\rang) $$</description>
+    </item>
+    
+  </channel>
+</rss>

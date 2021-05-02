@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>papers on notes</title>
+    <link>/docs/lie-groups/papers/</link>
+    <description>Recent content in papers on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 16 Oct 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/docs/lie-groups/papers/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>overcomplete sparse coding</title>
+      <link>/docs/lie-groups/papers/overcomplete_sc/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/overcomplete_sc/</guid>
+      <description>Highly overomplete sparse coding 
+Background Formulation We wish to model an image $I$ (where $I(\vec{x})$ refers to discrete segments of the image) as:
+$$ I(\vec{x}) = \sum_{i=1}^{M} \alpha_i \phi_i(\vec{x}) + \epsilon(\vec{x}) $$
+To evaluate &amp;ldquo;goodness&amp;rdquo; of reconstruction we define an energy function:
+$$ E = \frac{1}{2} \sum_{\vec{x}} [ I(\vec{x}) - \sum_{i=1}^{M} \alpha_i \phi_i(\vec{x}) ]^2 $$
+That essentially computes a mean squared error between a dictionary reconstruction and ground truth for each image segment.
+We add an additional L1 constraint on our &amp;ldquo;code&amp;rdquo; to enforce sparsity:</description>
+    </item>
+    
+    <item>
+      <title>homeomorphic vae</title>
+      <link>/docs/lie-groups/papers/homeomorphic_vae/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/homeomorphic_vae/</guid>
+      <description>Explorations in Homeomorphic Variational Auto-Encoding 
+Background Revisiting VAE A variational auto-encoder is a generative model that learns a joint distribution over input data and some latent random variable using variational inference techniques.
+$$ p(x, z) = p(x|z)p(z) $$
+Say we now have some data $X = \{ x_1 \ldots x_N \}$. Our objective is to learn a set of latent random variables that maximize our ability to reconstruct this set from our latent $\{z_i\}$</description>
+    </item>
+    
+    <item>
+      <title>lie group sparse coding</title>
+      <link>/docs/lie-groups/papers/lsc/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/lsc/</guid>
+      <description>Disentangling Images with Lie Group Transformations and Sparse Coding 
+Background Transformation Parameterization We first walk through some background for the modeling of the learned transform:
+$$ T(s)=W R(s) W^T $$
+Peter-Weyl Theorem $$\ldots$$
+CCC Lie Groups $$\ldots$$
+Formulation We represent some image $I \in \mathbb{R^D}$ as
+$$ I = WR(s)W^T\phi\alpha + \epsilon $$
+Where $\phi \in \mathbb{R^{DxK}}$ is our dictionary of templates and $\alpha \in \mathbb{R^K}$ is our code.
+$$ WR(s)W^T\phi\alpha + \epsilon $$</description>
+    </item>
+    
+    <item>
+      <title>lsc directions</title>
+      <link>/docs/lie-groups/papers/lsc_directions/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/lsc_directions/</guid>
+      <description>Disentangling Images with Lie Group Transformations and Sparse Coding 
+Directions for future work&amp;hellip;
+Background We represent some image $I \in \mathbb{R^D}$ as
+$$ I = WR(s)W^T\phi\alpha + \epsilon $$
+Where $\phi \in \mathbb{R^{DxK}}$ is our dictionary of templates and $\alpha \in \mathbb{R^K}$ is our code.
+$$ WR(s)W^T\phi\alpha + \epsilon $$
+Few notes:
+ Each template, or column of $\mathbb{R^{DxK}}$, has unit L2 norm. This ensures that each discrete pattern is qualitatively unique irrespective of scaling.</description>
+    </item>
+    
+  </channel>
+</rss>

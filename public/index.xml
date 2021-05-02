@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes</title>
+    <link>/</link>
+    <description>Recent content on notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 01 May 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>overcomplete sparse coding</title>
+      <link>/docs/lie-groups/papers/overcomplete_sc/</link>
+      <pubDate>Sat, 01 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/overcomplete_sc/</guid>
+      <description>Highly overomplete sparse coding 
+Background Formulation We wish to model an image $I$ (where $I(\vec{x})$ refers to discrete segments of the image) as:
+$$ I(\vec{x}) = \sum_{i=1}^{M} \alpha_i \phi_i(\vec{x}) + \epsilon(\vec{x}) $$
+To evaluate &amp;ldquo;goodness&amp;rdquo; of reconstruction we define an energy function:
+$$ E = \frac{1}{2} \sum_{\vec{x}} [ I(\vec{x}) - \sum_{i=1}^{M} \alpha_i \phi_i(\vec{x}) ]^2 $$
+That essentially computes a mean squared error between a dictionary reconstruction and ground truth for each image segment.
+We add an additional L1 constraint on our &amp;ldquo;code&amp;rdquo; to enforce sparsity:</description>
+    </item>
+    
+    <item>
+      <title>homeomorphic vae</title>
+      <link>/docs/lie-groups/papers/homeomorphic_vae/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/homeomorphic_vae/</guid>
+      <description>Explorations in Homeomorphic Variational Auto-Encoding 
+Background Revisiting VAE A variational auto-encoder is a generative model that learns a joint distribution over input data and some latent random variable using variational inference techniques.
+$$ p(x, z) = p(x|z)p(z) $$
+Say we now have some data $X = \{ x_1 \ldots x_N \}$. Our objective is to learn a set of latent random variables that maximize our ability to reconstruct this set from our latent $\{z_i\}$</description>
+    </item>
+    
+    <item>
+      <title>lie group sparse coding</title>
+      <link>/docs/lie-groups/papers/lsc/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/lsc/</guid>
+      <description>Disentangling Images with Lie Group Transformations and Sparse Coding 
+Background Transformation Parameterization We first walk through some background for the modeling of the learned transform:
+$$ T(s)=W R(s) W^T $$
+Peter-Weyl Theorem $$\ldots$$
+CCC Lie Groups $$\ldots$$
+Formulation We represent some image $I \in \mathbb{R^D}$ as
+$$ I = WR(s)W^T\phi\alpha + \epsilon $$
+Where $\phi \in \mathbb{R^{DxK}}$ is our dictionary of templates and $\alpha \in \mathbb{R^K}$ is our code.
+$$ WR(s)W^T\phi\alpha + \epsilon $$</description>
+    </item>
+    
+    <item>
+      <title>lsc directions</title>
+      <link>/docs/lie-groups/papers/lsc_directions/</link>
+      <pubDate>Sat, 17 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/papers/lsc_directions/</guid>
+      <description>Disentangling Images with Lie Group Transformations and Sparse Coding 
+Directions for future work&amp;hellip;
+Background We represent some image $I \in \mathbb{R^D}$ as
+$$ I = WR(s)W^T\phi\alpha + \epsilon $$
+Where $\phi \in \mathbb{R^{DxK}}$ is our dictionary of templates and $\alpha \in \mathbb{R^K}$ is our code.
+$$ WR(s)W^T\phi\alpha + \epsilon $$
+Few notes:
+ Each template, or column of $\mathbb{R^{DxK}}$, has unit L2 norm. This ensures that each discrete pattern is qualitatively unique irrespective of scaling.</description>
+    </item>
+    
+    <item>
+      <title>Diagram Support</title>
+      <link>/posts/diagram-support/</link>
+      <pubDate>Wed, 31 Mar 2021 13:11:22 +0800</pubDate>
+      
+      <guid>/posts/diagram-support/</guid>
+      <description>&lt;p&gt;Eureka supports the rendering of diagrams by using Mermaid.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Math Support</title>
+      <link>/posts/math-support/</link>
+      <pubDate>Fri, 20 Nov 2020 22:52:56 +0800</pubDate>
+      
+      <guid>/posts/math-support/</guid>
+      <description>&lt;p&gt;Eureka supports the rendering of mathematical formulas by using KaTeX.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>background</title>
+      <link>/docs/lie-groups/motivations/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/lie-groups/motivations/</guid>
+      <description>tooling from topology and abstract algebra</description>
+    </item>
+    
+    <item>
+      <title>motivations</title>
+      <link>/docs/smooth-manifold/motivations/</link>
+      <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/smooth-manifold/motivations/</guid>
+      <description>Formulations that motivate manifold optimization.
+Logistic regression Taking a well known formulation from linear algebra and teasing out a curvy structure.
+Consider $x_1,\ldots,x_m \in \xi$ each with a corresponding binary label $y_1,\ldots,y_m \in \{0,1\}$.
+We can define some vector $\theta \in \xi$ that we can &amp;ldquo;grab onto&amp;rdquo; with each $x_i$ using an inner-product defined over the space. Applying a logistic transform $\sigma$, we can obtained well-behaved probabilities:
+$$P[y=1|x,\theta] = \sigma(\lang\theta, x_i\rang) $$ $$P[y=0|x,\theta] = 1 - \sigma(\lang\theta, x_i\rang) $$</description>
+    </item>
+    
+    <item>
+      <title>Featured Image</title>
+      <link>/posts/featured-image/</link>
+      <pubDate>Tue, 26 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/featured-image/</guid>
+      <description>&lt;p&gt;Maecenas maximus, elit in ornare porttitor, nisi eros hendrerit nisl, sed fermentum nulla urna blandit tellus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>/posts/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>/posts/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Emoji Support</title>
+      <link>/posts/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
